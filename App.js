@@ -8,7 +8,8 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import Sample from './components/sample';
+//import Sample from './components/sample';
+import RenderForm from './components/RenderForm';
 // import { CashfreePG, returnData } from 'cashfreereactnativepg';
 
 const instructions = Platform.select({
@@ -22,11 +23,9 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.sample}>
-          <Sample style={styles.sample}></Sample>
-        </View>
-      </View>
+      <View style={styles.container}>  
+        <RenderForm/>
+      </View>     
     );
   }
 }
@@ -34,8 +33,6 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
@@ -52,8 +49,3 @@ const styles = StyleSheet.create({
     flex: 0.6,
   }
 });
-/*
-<Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-*/
