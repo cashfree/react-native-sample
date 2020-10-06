@@ -1,3 +1,6 @@
+# DEPRECATED
+Please check https://www.npmjs.com/package/react-native-pg-sdk_cashfree for the Cashfree React native plugin.
+
 # react-native-sample
 
 This is a sample react-native application that consumes the cashfreereactnativepg sdk.
